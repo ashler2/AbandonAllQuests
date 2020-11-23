@@ -1,4 +1,4 @@
-SLASH_ABANDON = "/abandonallquests"
+SLASH_ABANDON1 = "/aaq"
 
 
 local function getMaxQuests()
@@ -11,7 +11,8 @@ local function AbandonAllQuestsHandler()
 
     for i = 0,getMaxQuests(),1 
     do 
-        print(i) 
+        local id = C_QuestLog.GetQuestIDForLogIndex
+        print(id)
     end
 
 end
