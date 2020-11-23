@@ -15,13 +15,15 @@ local function AbandonAllQuestsHandler()
                 C_QuestLog.SetSelectedQuest(id)
                 C_QuestLog.SetAbandonQuest()
                 C_QuestLog.AbandonQuest()
-                local title = select(1, C_QuestLog.GetInfo(id))
-                print("The Quest" .. title .. "has been abandoned.")
-
             end
         end
     end
-    print("All Quests have been abandoned")
+    if(select(1,C_QuestLog.GetNumQuestLogEntries()) == 0 ) then
+        print("All Quests have been abandoned")
+    else 
+        print('Something failed to be abandoned')
+    end
+
 end
 
 
