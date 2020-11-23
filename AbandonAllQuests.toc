@@ -1,0 +1,7 @@
+## Interface: 90002
+## Title: AbandonAllQuests
+## Notes: Abandons all quests in the quest log.
+## Author: Ashler2
+## Version: 0.0.1
+
+AbandonAllQuests.lua
