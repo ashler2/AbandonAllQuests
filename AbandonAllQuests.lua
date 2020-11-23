@@ -18,12 +18,7 @@ local function AbandonAllQuestsHandler()
             end
         end
     end
-    if(select(1,C_QuestLog.GetNumQuestLogEntries()) == 0 ) then
-        print("All Quests have been abandoned")
-    else 
-        print('Something failed to be abandoned')
-    end
-
+    print("All Quests have been abandoned")
 end
 
 
