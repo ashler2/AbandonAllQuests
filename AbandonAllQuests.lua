@@ -11,7 +11,7 @@ local function AbandonAllQuestsHandler()
 
     for i = 0,getMaxQuests(),1 
     do 
-        local id = C_QuestLog.GetQuestIDForLogIndex
+        local id = C_QuestLog.GetQuestIDForLogIndex(i)
         print(id)
     end
 
